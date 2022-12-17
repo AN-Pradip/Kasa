@@ -1,6 +1,8 @@
 {
-  "name": "0.0.1",
+  "name": "0.0.2",
   "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -10,14 +12,18 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.5",
     "react-scripts": "5.0.1",
+    "sass": "^1.56.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "sass": "sass --watch ./styles/sass/main.scss:./styles/style.css"
   },
+  "author": "",
+  "license": "ISC",
   "eslintConfig": {
     "extends": [
       "react-app",
