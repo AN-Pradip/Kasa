@@ -1,6 +1,12 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
+import HomepageBanner from "../components/HomepageBanner";
 
-function Homepage(){}
+function Homepage(){
+    return(
+        <div className="Homepage">
+            <HomepageBanner />
+        </div>
+    )
+}
 
 export default Homepage;
