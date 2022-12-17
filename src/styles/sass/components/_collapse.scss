@@ -1,0 +1,31 @@
+.collapse{
+    background: transparent;
+    border-radius: 1rem;
+    &--checkbox{
+        display: none;
+    }
+    &--Detail{
+        display: none;
+        color:$colour-secondary;
+        line-height: 25px;
+        padding: 3%;
+    }
+    &--Label{
+        display: flex;
+        background-color: $colour-secondary;
+        border-radius: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        height: 3rem;
+        padding: 0 4%;
+        font-weight: bold;
+    }
+    &--arrow{
+        rotate: -90deg;
+        font-weight: 500;
+        font-size: 2rem;
+    }
+    &--List--Container{
+        color: $colour-secondary;
+    }
+}

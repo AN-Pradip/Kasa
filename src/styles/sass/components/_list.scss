@@ -1,0 +1,27 @@
+.Lodging--List{
+    grid-column-start: 1;
+    grid-row-start: 3;
+    padding: 0;
+    margin-top: 0;
+    display: flex;
+    li{
+        color: white;
+        background-color: $colour-secondary;
+        border-radius: 1rem;
+        padding: 0.2rem 1rem;
+        margin-right: 0.5rem;
+        align-self: center;
+    }
+}
+ul{
+    list-style-type: none;
+}
+.collapse--List--Container{
+    display: none;
+}
+.collapse--List{
+    
+    &--Item{
+        padding-top: 0.5rem;
+    }
+}

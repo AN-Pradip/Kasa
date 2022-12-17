@@ -1,0 +1,13 @@
+.Lodging--Host{
+    display: flex;
+    align-self: center;
+    justify-self: flex-end;
+    grid-row: 1 /span 2;
+    &--Description{
+        align-self: center;
+    }
+    &--Image{
+        border-radius: 50rem;
+        width: 5vw;
+    }
+}

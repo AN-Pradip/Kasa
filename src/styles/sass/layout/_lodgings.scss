@@ -1,0 +1,25 @@
+.Lodging--Details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0 5%;
+    color: $colour-secondary;
+}
+.Lodging--Title{
+    font-size: 2rem;
+    margin: 0;
+}
+.Lodging--Location{
+    grid-column-start: 1;
+    grid-row-start: 2;
+    margin:0;
+}
+.Lodging--Collapse{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0% 5%;
+    color: white;
+    justify-content: space-between;
+    column-gap: 5rem;
+}
+
