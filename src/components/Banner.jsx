@@ -1,6 +1,7 @@
 import React from "react";
 
 function Banner(bannerUrl, content){
+    //Initialize input
     content = bannerUrl.content
     bannerUrl = bannerUrl.bannerUrl;
     return(

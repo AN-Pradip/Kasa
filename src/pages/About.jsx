@@ -4,6 +4,7 @@ import Banner from "../components/Banner";
 import AboutBannerUrl from "../assets/ABOUT-BANNER.png"
 
 function About(){
+    //initialize the title and content 
     const CollapseDetails = [
         {
             title : "Fiabilité",
@@ -28,7 +29,7 @@ function About(){
             <div className="about--Collapse">
             {CollapseDetails.map((item, index) => {
                 return(
-                    <Collapse key={index} title={item.title} content={item.content} className="dddd"/>
+                    <Collapse key={index} title={item.title} content={item.content}/>
                 )
             })}
             </div>

@@ -6,9 +6,16 @@ import Collapse from "../components/Collapse";
 import Error from "../pages/Error";
 
 function Lodgings(){
+    //Get Url supposed lodgindId
     const {lodgingId} = useParams();
+    
+    //Find the id in the JSON file
     const lodging = lodgings.find((lodging) => lodging.id === lodgingId);
+
+    //Separate Host name by space
     const nameSeparated = lodging.host.name.trim().split(/\s+/);
+
+    //if the supposed lodging id was not found show error
     if(lodging){
         return(
             <div className="Lodging--Container">

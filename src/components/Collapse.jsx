@@ -1,9 +1,12 @@
 import React from "react";
 
 function Collapse(title, content){
+    //Initialize input
     content = title.content;
     title = title.title;
 
+
+    //hide or show collapse
     function CollapseAction(e){
         if(e.target.checked === true){
             e.target.nextSibling.nextSibling.style.display = "block"
@@ -18,6 +21,7 @@ function Collapse(title, content){
         }
     }
 
+    //sort if content is an array and display
     if (Array.isArray(content)){
         return(
             <div className="collapse">
