@@ -8,6 +8,7 @@ import Error from "../pages/Error";
 function Lodgings(){
     const {lodgingId} = useParams();
     const lodging = lodgings.find((lodging) => lodging.id === lodgingId);
+    const nameSeparated = lodging.host.name.trim().split(/\s+/);
     if(lodging){
         return(
             <div className="Lodging--Container">
@@ -21,7 +22,7 @@ function Lodgings(){
                         ))}
                     </ul>
                     <div className="Lodging--Host">
-                        <p className="Lodging--Host--Description"> {lodging.host.name} </p>
+                        <p className="Lodging--Host--Description"> {nameSeparated[0]} <br />{nameSeparated[1]} </p>
                         <img src={lodging.host.picture} alt="" className="Lodging--Host--Image"/>
                     </div>
                     <Rating rating={lodging.rating}/>

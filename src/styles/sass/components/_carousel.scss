@@ -2,5 +2,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 5% 5% 5% 5%;
+    height: 30vw;
+    padding: 5% 5% 1% 5%;
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    .Carousel{
+        height: 50vw;
+    }
 }

@@ -4,10 +4,18 @@
     justify-self: flex-end;
     grid-row: 1 /span 2;
     &--Description{
-        align-self: center;
+        padding-right: 5%;
     }
     &--Image{
         border-radius: 50rem;
-        width: 5vw;
+        max-height: 4rem;
+    }
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    .Lodging--Host{
+        grid-row: 4;
+        grid-column: 2;
     }
 }

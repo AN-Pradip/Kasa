@@ -1,7 +1,21 @@
 .Rating--Container{
     justify-self: flex-end;
     grid-row-start: 3;
+    grid-column: 2;
     img{
         margin: 0 0.2rem;
+    }
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    .Rating--Container{
+        justify-self: flex-start;
+        grid-row: 4;
+        grid-column: 1;
+        align-self: center;
+        img{
+            width: 1.3rem;
+        }
     }
 }
