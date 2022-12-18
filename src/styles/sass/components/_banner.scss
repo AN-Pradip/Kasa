@@ -6,12 +6,28 @@
     color: white;
 
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: c  enter;
     background-size: cover;
     background-color: grey;
     background-blend-mode: multiply;
 
-    height: 13rem;
-    border-radius: 2rem;
-    font-size: 2rem;
+    height: 13vw;
+    border-radius: 1rem;
+    font-size: 2.5vw;
+    h2{
+        text-align: center;
+    }
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    .Banner{
+        height: 7rem;
+        border-radius: 0.5rem;
+        h2{
+            text-align: left;
+            //font-size: 1.8rem;
+            padding: 0 1rem;
+        }
+    }
 }
