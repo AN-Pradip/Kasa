@@ -1,14 +1,16 @@
-.HomepageBanner{
+.Banner{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5% 5% 0 5%;
     color: white;
-    background: no-repeat center linear-gradient(
-        rgba(0, 0, 0, 0.2), 
-        rgba(0, 0, 0, 0.2)
-      ), url(../../../assets/HOMEPAGE-BANNER.png);
+
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
+
     height: 13rem;
     border-radius: 2rem;
     font-size: 2rem;

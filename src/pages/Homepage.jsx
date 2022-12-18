@@ -1,11 +1,12 @@
 import * as React from "react";
-import HomepageBanner from "../components/HomepageBanner";
+import Banner from "../components/Banner";
 import LodgingItems from "../components/LodgingItems";
+import HomepageBannerURL from "../assets/HOMEPAGE-BANNER.png"
 
 function Homepage(){
     return(
         <div className="Homepage">
-            <HomepageBanner />
+            <Banner bannerUrl={HomepageBannerURL} content="Chez vous, partout et ailleurs"/>
             <LodgingItems />
         </div>
     )

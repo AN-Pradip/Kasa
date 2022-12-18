@@ -23,4 +23,3 @@ function LodgingItems(){
 }
 
 export default LodgingItems;
-//<div className="article--overlay"></div>

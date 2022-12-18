@@ -12,6 +12,7 @@
     }
     &--Label{
         display: flex;
+        color: white;
         background-color: $colour-secondary;
         border-radius: 1rem;
         align-items: center;
@@ -27,5 +28,13 @@
     }
     &--List--Container{
         color: $colour-secondary;
+    }
+}
+.about--Collapse{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10%;
+    & > * {
+        margin: 1% 0;
     }
 }
