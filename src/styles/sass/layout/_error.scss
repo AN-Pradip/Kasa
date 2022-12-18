@@ -2,13 +2,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
     color: $colour-secondary;
     &--mainHeader{
-        font-size: 8rem;
+        font-size: 15rem;
         margin-bottom: 0;
     }
     &--secondaryHeader{
-        font-size: 2rem;
+        font-size: 3rem;
         margin-bottom: 3vh;
+        max-width: 80vw;
+        text-align: center;
+        padding-bottom: 20%;
+    }
+    a{
+        color: $colour-secondary;
+        font-size: 1rem
+    }
+}
+//MOBILE
+@media screen and (max-width: 425px) {
+    .Error{
+        &--mainHeader{
+            font-size: 8rem;
+        }
+        &--secondaryHeader{
+            font-size: 1rem;
+        }
     }
 }
