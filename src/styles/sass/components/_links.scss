@@ -4,6 +4,15 @@ Link{
 .nav--Links{
     text-decoration: none;
     color: $colour-secondary;
-    font-size: 1.5rem;
+    font-size: 2vw;
     font-weight: 500;
+    padding-left: 3rem;
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    .nav--Links{
+        padding-left: 1rem;
+        font-size: 6vw;
+    }
 }

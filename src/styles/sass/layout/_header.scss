@@ -7,8 +7,28 @@ header{
     padding-right: 5%;
     nav{
        display: flex;
-       width: 15%;
        justify-content: space-around;
        align-items: center;
+    }
+}
+
+//DESKTOP AND TABLET
+@media screen and (min-width: 425px) {
+    .header--container{
+        &--img{
+            width: 12vw;
+        }
+    }
+}
+
+//MOBILE
+@media screen and (max-width: 425px) {
+    header{
+        justify-content: space-around;
+    }
+    .header--container{
+        &--img{
+            width: 30vw;
+        }
     }
 }

@@ -7,8 +7,8 @@ import logo from "../assets/LOGO.png";
 function Header(){
     return(
         <header>
-            <Link to="/">
-                <img src={logo} alt="logo"/>
+            <Link to="/" className="header--container">
+                <img src={logo} alt="logo" className="header--container--img"/>
             </Link>
             <nav>
                 <NavLink to="/" className="nav--Links">
