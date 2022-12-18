@@ -23,7 +23,7 @@ function About(){
         }
     ]
     return(
-        <div>
+        <div className="about">
             <Banner bannerUrl={AboutBannerUrl} content=""/>
             <div className="about--Collapse">
             {CollapseDetails.map((item, index) => {

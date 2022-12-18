@@ -43,13 +43,5 @@
     }
     .Lodging--Collapse{
         grid-template-columns: 1fr;
-        .collapse{
-            border-radius: 0.5rem;
-            margin: 3% 0;
-            &--Label{
-                border-radius: 0.5rem;
-                height: 2rem;
-            }
-        }
     }
 }
