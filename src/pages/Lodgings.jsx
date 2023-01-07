@@ -8,15 +8,15 @@ import Error from "../pages/Error";
 function Lodgings(){
     //Get Url supposed lodgindId
     const {lodgingId} = useParams();
+    console.log(lodgingId)
     
     //Find the id in the JSON file
     const lodging = lodgings.find((lodging) => lodging.id === lodgingId);
 
-    //Separate Host name by space
-    const nameSeparated = lodging.host.name.trim().split(/\s+/);
-
     //if the supposed lodging id was not found show error
     if(lodging){
+        //Separate Host name by space
+        const nameSeparated = lodging.host.name.trim().split(/\s+/);
         return(
             <div className="Lodging--Container">
                 <Carousel lodgingPictures={lodging.pictures}/>

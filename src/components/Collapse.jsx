@@ -1,4 +1,5 @@
 import React from "react";
+import leftArrow from "../assets/ARROW-LEFT.png";
 
 function Collapse(title, content){
     //Initialize input
@@ -28,7 +29,7 @@ function Collapse(title, content){
                 <input className="collapse--checkbox" type="checkbox" id={title} onChange={CollapseAction}/>
                 <label htmlFor={title} className="collapse--Label"> 
                     {title} 
-                    <p className="collapse--arrow">&lt;</p>
+                    <img src={leftArrow} alt="CollapseArrow" className="collapse--arrow"/>
                 </label>
                 <div className="collapse--List--Container">
                     <ul className="collapse--List">
@@ -47,7 +48,7 @@ function Collapse(title, content){
                     <input className="collapse--checkbox" type="checkbox" id={title} onChange={CollapseAction}/>
                     <label htmlFor={title} className="collapse--Label"> 
                         {title} 
-                        <p className="collapse--arrow">&lt;</p>
+                        <img src={leftArrow} alt="CollapseArrow" className="collapse--arrow"/>
                     </label>
                     <div className="collapse--Detail">
                         {content}

@@ -33,6 +33,7 @@ function Carrousel(lodgingPictures){
     return(
         <div className="Carousel">
             <img src={lodgingPictures[currentCarousel]} alt="carouselImage" className="carousel--image" />
+            <p className="Carousel--counter"> {currentCarousel} / {carouselLength}</p>
             {arrowLeft}
             {arrowRight}
         </div>

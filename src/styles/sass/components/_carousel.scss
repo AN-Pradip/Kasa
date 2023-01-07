@@ -4,11 +4,21 @@
     grid-template-rows: 1fr 1fr 1fr;
     height: 30vw;
     padding: 5% 5% 1% 5%;
+    &--counter{
+        color: white;
+        grid-row: 3;
+        grid-column: 2;
+        justify-self: center;
+        align-self: flex-end;
+    }
 }
 
 //MOBILE
 @media screen and (max-width: 425px) {
     .Carousel{
         height: 50vw;
+        &--counter{
+            display: none;
+        }
     }
 }
